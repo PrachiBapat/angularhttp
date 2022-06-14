@@ -1,0 +1,12 @@
+
+<!-- https://jsonplaceholder.typicode.com/users -->
+<!-- https://jsonplaceholder.typicode.com/todos -->
+
+<h1>List of users</h1>
+
+<div *ngFor="let user of users">
+  <h4>{{ user.name | uppercase }}</h4>
+  <p>Email: {{ user.email }}</p>
+  <p>Annual Compensation: {{ compensation | currency:'CAD' }}</p>
+  <p>Date Joined: {{ dateJoined | date:'long' }}</p>
+</div>

@@ -1,0 +1,81 @@
+<!-- <p>userform works!</p> -->
+<!-- Template Variable Method
+  <div class="mb-3">
+    <label for="firstName" class="form-label">First Name</label>
+    <input #fn type="text" class="form-control" id="firstName" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="middleName" class="form-label">Middle Name</label>
+    <input #mn type="text" class="form-control" id="middleName" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="lastName" class="form-label">Last Name</label>
+    <input #ln type="text" class="form-control" id="lastName" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="age" class="form-label">Age</label>
+    <input #age type="number" class="form-control" id="age" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="address" class="form-label">Street Address</label>
+    <input #staddr type="text" class="form-control" id="address" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="city" class="form-label">City</label>
+    <input #city type="text" class="form-control" id="city" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="country" class="form-label">Country</label>
+    <input #country type="text" class="form-control" id="country" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="postalCode" class="form-label">Postal Code</label>
+    <input #postalcode type="text" class="form-control" id="postalCode" aria-describedby="emailHelp">
+  </div>
+  <button class="btn btn-primary" (click)="displayForm(fn.value, mn.value, ln.value, age.value, staddr.value, city.value, country.value, postalcode.value)">Submit</button>
+-->
+
+
+<!-- Two way binding Method -->
+
+<div class="mb-3">
+  <label for="firstName" class="form-label">First Name</label>
+  <input [(ngModel)]="fn1" type="text" class="form-control" id="firstName" aria-describedby="emailHelp">
+</div>
+
+<div class="mb-3">
+  <label for="middleName" class="form-label">Middle Name</label>
+  <input [(ngModel)]="mn" type="text" class="form-control" id="middleName" aria-describedby="emailHelp">
+</div>
+
+<div class="mb-3">
+  <label for="lastName" class="form-label">Last Name</label>
+  <input [(ngModel)]="ln" type="text" class="form-control" id="lastName" aria-describedby="emailHelp">
+</div>
+
+<div class="mb-3">
+  <label for="age" class="form-label">Age</label>
+  <input [(ngModel)]="age" type="number" class="form-control" id="age" aria-describedby="emailHelp">
+</div>
+
+<div class="mb-3">
+  <label for="address" class="form-label">Street Address</label>
+  <input [(ngModel)]="staddr" type="text" class="form-control" id="address" aria-describedby="emailHelp">
+</div>
+
+<div class="mb-3">
+  <label for="city" class="form-label">City</label>
+  <input [(ngModel)]="city" type="text" class="form-control" id="city" aria-describedby="emailHelp">
+</div>
+
+<div class="mb-3">
+  <label for="country" class="form-label">Country</label>
+  <input [(ngModel)]="country" type="text" class="form-control" id="country" aria-describedby="emailHelp">
+</div>
+
+<div class="mb-3">
+  <label for="postalCode" class="form-label">Postal Code</label>
+  <input [(ngModel)]="postalcode" type="text" class="form-control" id="postalCode" aria-describedby="emailHelp">
+</div>
+
+<button class="btn btn-primary" (click)="displayForm()">Submit</button>
